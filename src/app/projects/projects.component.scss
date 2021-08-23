@@ -1,0 +1,131 @@
+.options {
+  height: 40px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 6px 10px;
+    display: flex;
+    li {
+      a {
+        display: block;
+        padding: 12px 8px;
+        label {
+          margin: 0px 6px;
+        }
+      }
+    }
+  }
+}
+
+.search {
+  margin: 10px;
+  height: 40px;
+  position: relative;
+}
+
+.list-of-projects {
+  height: calc(100% - 100px);
+  overflow: hidden;
+  table {
+    margin-top: 10px;
+    text-align: left;
+    table-layout: fixed;
+    font-size: 12px;
+    border-collapse: collapse;
+    height: calc(100% - 50px);
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    thead {
+      display: inline-block;
+      width: 100%;
+      position: sticky;
+      top: 0;
+      tr {
+        border-bottom: 1px solid #d8d8d8;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 400;
+        th {
+          font-weight: 500;
+          padding: 10px;
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
+    }
+    tbody {
+      height: calc(100% - 36px);
+      display: block;
+      width: 100%;
+      overflow: auto;
+      tr {
+        width: 100%;
+        display: block;
+        td {
+          font-weight: 400;
+          padding: 10px;
+          cursor: pointer;
+          .project-name {
+            width: 222px;
+          }
+          .project-name {
+            h3 {
+              font-weight: 400;
+              margin: 10px 0 0;
+            }
+          }
+          .client-name {
+            h4 {
+              margin: 6px 0;
+              color: #6d6d6d;
+            }
+          }
+          .progress {
+            width: 100%;
+            position: relative;
+            height: 3px;
+            border-radius: 4px;
+            background: #8bc34a61;
+            margin: 5px 0px;
+            transition: all 0.5s linear;
+            .bar {
+              width: 20%;
+              background: #4caf50;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              transition: all 0.2s linear;
+            }
+          }
+        }
+      }
+    }
+    th:first-child,
+    td:first-child {
+      width: 70%;
+    }
+    th:last-child,
+    td:last-child {
+      width: 30%;
+    }
+  }
+  .refresh-projects {
+    text-align: center;
+    padding: 8px;
+    height: 40px;
+    background: #f1f1f1;
+    a {
+      font-size: 12px;
+      color: #8c8c8c;
+      padding: 5px;
+      label {
+        margin: 6px;
+      }
+    }
+  }
+}

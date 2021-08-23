@@ -1,0 +1,56 @@
+<div class="body-container">
+  <div class="search">
+    <input type="search" placeholder="Search Projects" />
+  </div>
+  <div class="list-of-projects">
+    <table>
+      <thead>
+        <tr>
+          <th>Projects</th>
+          <th>Hour this week</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let project of projects">
+            <tr>
+              <td>
+                <div class="project-name">
+                  <h3><a routerLink="/project/{{project.id}}">{{project.name}}</a></h3>
+                </div>
+                <div class="client-name">
+                  <h4>{{project.owner}}</h4>
+                </div>
+              </td>
+              <td>
+                <div class="time-log">
+                  <div class="time">{{project?.user?.loggedTime}}hr</div>
+                  <div class="progress">
+                    <div class="bar"
+                      [style.width.%]="getPercentage(project?.user?.loggedTime, project?.user?.totalTime)">
+                      <div class="completed-bar"></div>
+                    </div>
+                  </div>
+                  <div class="total-time">of {{project?.user?.totalTime}}hrs</div>
+                </div>
+              </td>
+        </ng-container>
+      </tbody>
+    </table>
+    <div class="refresh-projects">
+      <a href="javascript:;">
+        <i class="fas fa-sync"></i>
+        <label>Sync Projects</label>
+      </a>
+    </div>
+  </div>
+  <div class="options">
+    <ul>
+      <li>
+        <a routerLink="/tracker/setting">
+          <i class="fas fa-cog"></i>
+          <label>Suryansh Srivastava</label>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

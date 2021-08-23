@@ -1,0 +1,39 @@
+.project-information {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 2px;
+  border-bottom: 1px solid #d6d6d6;
+  box-shadow: 2px 0px 4px #00000059;
+  .back-button {
+    flex: 0 0 40px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      padding: 8px 20px;
+    }
+  }
+  .project {
+    width: 100%;
+    .project-name {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    .project-owner {
+      font-size: 12px;
+      color: #777777;
+    }
+  }
+  .select-task {
+    select {
+      width: 100%;
+      margin: 5px 0px;
+      padding: 5px 5px;
+      background: #ececec;
+      border: 0;
+      font-size: 14px;
+      outline: 0;
+    }
+  }
+}

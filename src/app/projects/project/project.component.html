@@ -1,0 +1,23 @@
+<div class="body-container">
+  <div class="project-information">
+    <div class="back-button">
+      <a routerLink="/projects">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+    </div>
+    <div class="project">
+      <div class="project-name">
+        {{project.name}}
+      </div>
+      <div class="project-owner">
+        {{project.owner}}
+      </div>
+      <div class="select-task">
+        <select>
+          <option *ngFor="let task of project.tasks" [value]="task.id">{{task.name}}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <mat-slide-toggle>Slide me!</mat-slide-toggle>
+</div>

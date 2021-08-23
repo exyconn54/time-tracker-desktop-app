@@ -1,0 +1,31 @@
+<div class="body-container">
+  <div class="auth-wrapper">
+    <div class="logo">
+      <a href="javascript:;">
+        <img src="assets/logo.png" alt="Logo">
+      </a>
+    </div>
+    <div class="form-wrapper">
+      <form [formGroup]="loginForm">
+        <div class="input-wrapper">
+          <label>Login</label>
+          <input type="email" formControlName="email" placeholder="e.g. bill@business.com">
+        </div>
+        <div class="input-wrapper">
+          <label>Password</label>
+          <input ormControlName="password" type="password">
+        </div>
+        <div class="auth-action">
+          <a href="javascript:;">New user?</a>
+          <a href="javascript:;">Forgot password?</a>
+        </div>
+        <div class="form-action">
+          <button (click)="login()">Login</button>
+        </div>
+        <div class="policy">
+          ©2021 Time Tracker, Inc. All Rights Reserved. <a>Privacy Policy</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
