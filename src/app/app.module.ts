@@ -16,6 +16,12 @@ import { LoginComponent } from './auth/login/login.component';
 
 // Material Module
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule,
+    MatExpansionModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

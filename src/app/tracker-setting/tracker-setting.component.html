@@ -1,3 +1,94 @@
 <div class="body-container">
-    <h3>Settings</h3>    
+  <div class="setting">
+    <div class="back-button">
+      <a routerLink="/projects">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </a>
+    </div>
+    <div class="setting-inner">
+      <div class="setting-heading">
+        Setting
+      </div>
+    </div>
+  </div>
+  <div class="setting-pannel">
+    <mat-accordion>
+      <mat-expansion-panel expanded>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            User Profile
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          Setting Content
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Screenshots
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          Setting Content
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Timezones
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          <form class="timezone-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <mat-label>Timezones</mat-label>
+              <input
+                     placeholder="Pick your timezone"
+                     aria-label="Timezones"
+                     matInput
+                     [formControl]="timezone"
+                     [matAutocomplete]="auto">
+            </mat-form-field>
+          </form>
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let timezone of timezones" [value]="timezone.label">
+              {{timezone.label}}
+            </mat-option>
+          </mat-autocomplete>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Camera
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          <mat-slide-toggle>Take photo while work</mat-slide-toggle>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Location
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          <mat-slide-toggle>Location</mat-slide-toggle>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Advanced
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="setting-content">
+          <mat-slide-toggle>Automatic launch</mat-slide-toggle>
+          <mat-slide-toggle>Stop Tracer on Screen Lock</mat-slide-toggle>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
 </div>

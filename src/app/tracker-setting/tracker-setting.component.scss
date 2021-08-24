@@ -1,0 +1,27 @@
+.setting {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 2px;
+  border-bottom: 1px solid #d6d6d6;
+  box-shadow: 2px 0px 4px #00000059;
+  .back-button {
+    flex: 0 0 40px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      padding: 8px 20px;
+      mat-icon {
+        font-size: 40px;
+      }
+    }
+  }
+  .setting-inner {
+    width: 100%;
+    .setting-heading {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+  }
+}

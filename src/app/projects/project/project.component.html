@@ -2,7 +2,7 @@
   <div class="project-information">
     <div class="back-button">
       <a routerLink="/projects">
-        <i class="fas fa-chevron-left"></i>
+        <mat-icon>keyboard_arrow_left</mat-icon>
       </a>
     </div>
     <div class="project">
@@ -19,5 +19,42 @@
       </div>
     </div>
   </div>
-  <mat-slide-toggle>Slide me!</mat-slide-toggle>
+  <div class="on-off-time">
+    <div class="current-session">
+      <h2>0 hrs 00 m</h2>
+      <h4>Current Session</h4>
+    </div>
+    <div class="toggle-on-off">
+      <mat-slide-toggle></mat-slide-toggle>
+    </div>
+  </div>
+  <div class="analytic-figure">
+    <div class="today-time">
+      <h5>0:00 hrs</h5>
+      <h6>Today (Mon Local)</h6>
+    </div>
+    <div class="week-time">
+      <h5>0:00 of 40 hrs</h5>
+      <h6>This week (UTC)</h6>
+    </div>
+  </div>
+  <div class="working-memo">
+    <div class="input-wrap">
+      <label>Memo</label>
+      <input type="text">
+    </div>
+  </div>
+  <div class="latest-screen-capture">
+    <div class="input-wrap">
+      <label>Latest Screen Capture</label>
+      <div class="image-capture">
+        <a href="javascript:;">
+          <img src="assets/screen.png" alt="capture">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="external-links">
+    <a href="javascript:;">Work logs</a>
+  </div>
 </div>
