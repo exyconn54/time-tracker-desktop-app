@@ -23,4 +23,8 @@ export class ProjectsComponent implements OnInit {
     }
     return 0;
   }
+
+  tableFilter(event: any) {
+    console.log(event.target.value);
+  }
 }

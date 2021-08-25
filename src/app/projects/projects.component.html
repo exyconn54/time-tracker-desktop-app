@@ -1,6 +1,6 @@
 <div class="body-container">
   <div class="search">
-    <input type="search" placeholder="Search Projects" />
+    <input type="search" placeholder="Search Projects" (keyup)="tableFilter($event)" />
   </div>
   <div class="list-of-projects">
     <table>
